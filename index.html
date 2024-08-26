@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday!!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<audio id="myAudio" >
+    <source src="aud1.mp3" type="audio/mp3" />
+    <embed height="100" width="100" src="aud1.mp3" />
+</audio>
+<body>
+    <div class="container">
+        <button class="ckbutton" id="showCakeButton" onclick="showCake()">Click for a Surprise</button>
+        <div class="cake" id="cake">
+            <div class="cake-layer bottom"></div>
+            <div class="cake-layer middle"></div>
+            <div class="cake-layer top"></div>
+            <div class="cake-decoration">
+                <div class="candle"><div class="candle-light"></div></div>
+                <div class="candle"><div class="candle-light"></div></div>
+                <div class="candle"><div class="candle-light"></div></div>
+            </div>
+        </div>
+        <div class="birthday-text" id="birthday-text">Happy Birthday!!🥳 </div>
+        <div class="wishing-text" id="wishing-text">Have a Blessed Year Ahead.😊</div>
+        <div class="confetti" id="confetti"></div>
+        <div class="pops" id="pops"></div>
+        <div class="hearts" id="hearts"></div>
+        <button class="button hidden" id="celebrateButton" onclick="triggerCelebration()">Light Up</button>
+        <div class="light left" id="left-light"></div>
+        <div class="light right" id="right-light"></div>
+        <div class="light-glow left" id="left-glow"></div>
+        <div class="light-glow right" id="right-glow"></div>
+        <button class="button hidden" id="nextPageButton" onclick="goToNextPage()">Next</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
